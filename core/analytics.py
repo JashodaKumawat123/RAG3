@@ -100,5 +100,3 @@ def recommend_remediation(user_id: str, goals: List[str], rag_engine, clip_index
 
 		out[comp] = {"text": text_hits, "media": media_hits}
 	return out
-
-
