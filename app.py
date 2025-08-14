@@ -164,7 +164,7 @@ with tabs[3]:
     q2 = st.text_input("Describe what you want to see (e.g., 'binary tree traversal diagram')")
     k2 = st.slider("Top-k images", 1, 20, 8)
     if st.button("Search Media"):
-        results = st.session_state.clip.query(q2, k=k2, where={})
+        results = st.session_state.clip.query(q2, k=k2)
         cols = st.columns(4)
         shown = 0
         for r in results:
