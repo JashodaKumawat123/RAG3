@@ -16,6 +16,10 @@ from core.competency import topological_sequence, get_prerequisites, get_objecti
 from core.analytics import estimate_mastery, predict_performance, identify_gaps, recommend_remediation, choose_difficulty
 from core.quizzes import load_quiz_packs, grade_quiz
 
+from core.user import init_db
+
+init_db()
+
 st.set_page_config(page_title="EduRAG: Learning Path RAG", layout="wide")
 st.title("🎓 EduRAG — Personalized Learning Path RAG (DSA + Multimodal)")
 
