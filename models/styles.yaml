@@ -1,0 +1,54 @@
+styles:
+  visual: ["diagram", "slides", "annotated-code", "whiteboard-video", "infographic", "flowchart"]
+  auditory: ["podcast", "lecture-audio", "explainer-video", "discussion", "interview"]
+  read_write: ["notes", "articles", "documentation", "textbook", "blog-post", "research-paper"]
+  kinesthetic: ["interactive", "notebook", "coding-exercise", "project", "simulation", "hands-on-lab"]
+
+style_questions:
+  - question: "When learning a new concept, I prefer to:"
+    options:
+      - "See diagrams and visual representations"
+      - "Listen to someone explain it"
+      - "Read about it in detail"
+      - "Try it out hands-on"
+    weights:
+      visual: 1
+      auditory: 1
+      read_write: 1
+      kinesthetic: 1
+      
+  - question: "I learn best when I can:"
+    options:
+      - "Visualize the process or concept"
+      - "Discuss it with others"
+      - "Take detailed notes"
+      - "Practice it repeatedly"
+    weights:
+      visual: 1
+      auditory: 1
+      read_write: 1
+      kinesthetic: 1
+      
+  - question: "When solving problems, I typically:"
+    options:
+      - "Draw diagrams or sketches"
+      - "Talk through my thinking"
+      - "Write out my approach step-by-step"
+      - "Experiment with different solutions"
+    weights:
+      visual: 1
+      auditory: 1
+      read_write: 1
+      kinesthetic: 1
+      
+  - question: "I remember information best when I:"
+    options:
+      - "See it in a chart or graph"
+      - "Hear it explained"
+      - "Read and write about it"
+      - "Do something with it"
+    weights:
+      visual: 1
+      auditory: 1
+      read_write: 1
+      kinesthetic: 1

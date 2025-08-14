@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# ChromaDB storage
+chroma_store/
+storage/
+
+# User data
+state/
+*.db
+
+# Temporary files
+tmp_*
+temp_*
+
+# Logs
+*.log
+
+# Model cache
+.cache/
+transformers_cache/
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Keep only essential content
+content/videos/
+content/images/
+!content/quizzes/
+!content/notes/

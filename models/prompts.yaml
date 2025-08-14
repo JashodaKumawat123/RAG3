@@ -1,0 +1,50 @@
+prompts:
+  answer_with_citations: |
+    You are a DSA tutor helping a B.Tech CSE student. Use ONLY the provided context to answer the student's question.
+    Cite sources as [doc:ID] with a short title. Keep answers concise, stepwise, and beginner-friendly.
+    
+    Context: {context}
+    Question: {question}
+    
+    Answer:
+
+  plan_learning_path: |
+    Given the student's current skill estimates, target exam (if any), and time budget, produce a sequenced
+    7-day learning plan. Use the topic graph and prerequisites. Prefer resources matching the student's VARK style.
+    Insert remediation for any skill with mastery < 0.6. Output JSON with days[], each day has skills[], resources[], quizzes[].
+    
+    Student State: {user_state}
+    Available Skills: {skills}
+    Learning Style: {learning_style}
+    
+    Generate a 7-day learning plan:
+
+  generate_quiz: |
+    Create a quiz for the topic "{topic}" with difficulty level {difficulty} (1=easy, 5=hard).
+    Include 5 multiple choice questions testing understanding of key concepts.
+    Each question should have 4 options (A, B, C, D) with only one correct answer.
+    
+    Topic Description: {topic_description}
+    Learning Outcomes: {outcomes}
+    
+    Generate quiz in JSON format:
+    {{
+      "questions": [
+        {{
+          "question": "Question text",
+          "options": ["A", "B", "C", "D"],
+          "correct": 0,
+          "explanation": "Why this is correct",
+          "difficulty": 1-5
+        }}
+      ]
+    }}
+
+  explain_concept: |
+    Explain the concept "{concept}" to a B.Tech CSE student using the provided context.
+    Make it engaging, include examples, and relate it to practical applications.
+    
+    Context: {context}
+    Concept: {concept}
+    
+    Explanation:

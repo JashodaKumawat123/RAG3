@@ -1,0 +1,32 @@
+{
+  "title": "Arrays Basics Quiz",
+  "competency": "arrays",
+  "level": "beginner",
+  "questions": [
+    {
+      "question": "What is the time complexity of accessing an element by index in an array?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+      "answer_index": 2
+    },
+    {
+      "question": "Which of the following is true about arrays?",
+      "options": [
+        "Arrays have dynamic size by default",
+        "Elements are stored in contiguous memory",
+        "Insertion in the middle is O(1)",
+        "They cannot store integers"
+      ],
+      "answer_index": 1
+    },
+    {
+      "question": "What is the main disadvantage of arrays compared to linked lists?",
+      "options": [
+        "Slower access time",
+        "Higher memory overhead per element",
+        "Fixed size and costly middle insertions",
+        "Cannot be sorted"
+      ],
+      "answer_index": 2
+    }
+  ]
+}

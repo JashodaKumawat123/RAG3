@@ -1,0 +1,80 @@
+skills:
+  - id: arrays
+    title: Arrays
+    level: 1
+    difficulty: 1
+    prerequisites: []
+    outcomes: [indexing, traversal, complexity_basics]
+    description: "Fundamental data structure for storing elements in contiguous memory"
+    
+  - id: strings
+    title: Strings
+    level: 1
+    difficulty: 1
+    prerequisites: []
+    outcomes: [substring, hashing_intro]
+    description: "Character sequences and string manipulation techniques"
+    
+  - id: linked_lists
+    title: Linked Lists
+    level: 2
+    difficulty: 2
+    prerequisites: [arrays]
+    outcomes: [insertion_deletion, two_pointers]
+    description: "Dynamic data structure with nodes connected by pointers"
+    
+  - id: stacks_queues
+    title: Stacks & Queues
+    level: 2
+    difficulty: 2
+    prerequisites: [arrays]
+    outcomes: [lifo_fifo, abstract_data_types]
+    description: "Abstract data types with specific insertion and removal rules"
+    
+  - id: trees
+    title: Trees
+    level: 3
+    difficulty: 3
+    prerequisites: [linked_lists]
+    outcomes: [hierarchical_data, traversal_methods]
+    description: "Hierarchical data structure with parent-child relationships"
+    
+  - id: graphs
+    title: Graphs
+    level: 4
+    difficulty: 4
+    prerequisites: [trees]
+    outcomes: [connectivity, pathfinding, graph_algorithms]
+    description: "Network of nodes connected by edges"
+    
+  - id: sorting
+    title: Sorting Algorithms
+    level: 2
+    difficulty: 2
+    prerequisites: [arrays]
+    outcomes: [comparison_based, divide_conquer, stability]
+    description: "Algorithms to arrange elements in specific order"
+    
+  - id: searching
+    title: Searching Algorithms
+    level: 1
+    difficulty: 1
+    prerequisites: [arrays]
+    outcomes: [linear_search, binary_search, efficiency]
+    description: "Techniques to find elements in data structures"
+    
+  - id: hashing
+    title: Hashing
+    level: 3
+    difficulty: 3
+    prerequisites: [arrays, strings]
+    outcomes: [hash_functions, collision_resolution, hash_tables]
+    description: "Data structure for efficient key-value storage and retrieval"
+    
+  - id: dynamic_programming
+    title: Dynamic Programming
+    level: 4
+    difficulty: 4
+    prerequisites: [arrays, recursion]
+    outcomes: [memoization, optimal_substructure, state_transitions]
+    description: "Problem-solving technique using optimal substructure"

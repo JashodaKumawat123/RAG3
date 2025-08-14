@@ -1,0 +1,7 @@
+id,title,type,url,content,competencies,level
+array_basics,Array Fundamentals,text,,"Arrays are a fundamental data structure that stores elements in contiguous memory locations. Each element can be accessed directly using an index. Arrays have O(1) access time but fixed size.",arrays,beginner
+array_operations,Array Operations,text,,"Common array operations include insertion deletion searching and sorting. Insertion and deletion at the end are O(1) but in the middle require shifting elements.",arrays,beginner
+linked_list_intro,Linked List Introduction,text,,"A linked list is a linear data structure where elements are stored in nodes and each node points to the next node. Unlike arrays linked lists have dynamic size and no random access.",linked-lists,beginner
+tree_basics,Tree Data Structure,text,,"A tree is a hierarchical data structure with a root node and child nodes. Each node can have multiple children making it useful for representing hierarchical relationships.",trees,beginner
+binary_tree,Binary Trees,text,,"A binary tree is a tree where each node has at most two children called left and right child. Binary trees are fundamental for many algorithms and data structures.",trees,intermediate
+graph_intro,Graph Fundamentals,text,,"A graph is a collection of vertices connected by edges. Graphs can be directed or undirected and are used to model relationships between objects.",graphs,intermediate

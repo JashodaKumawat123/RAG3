@@ -1,0 +1,8 @@
+streamlit
+chromadb
+pandas
+numpy
+torch
+transformers
+Pillow
+opencv-python
