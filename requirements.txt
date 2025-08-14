@@ -5,4 +5,5 @@ numpy>=1.26.0
 torch
 transformers
 Pillow
+pysqlite3-binary
 # opencv-python  # Optional - only needed for video processing
