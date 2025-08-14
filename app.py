@@ -1,8 +1,13 @@
 
+import sys
+__import__("pysqlite3")
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 
-import os, json, time, io, uuid
 from core.user import init_db
 init_db()
+
+
+import os, json, time, io, uuid
 import streamlit as st
 import pandas as pd
 from PIL import Image
