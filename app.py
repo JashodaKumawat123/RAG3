@@ -1,3 +1,12 @@
+
+import sys
+__import__("pysqlite3")
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
+from core.user import init_db
+init_db()
+
+
 import os, json, time, io, uuid
 import streamlit as st
 import pandas as pd
@@ -15,6 +24,8 @@ from core.mm import CLIPIndexer
 from core.competency import topological_sequence, get_prerequisites, get_objectives
 from core.analytics import estimate_mastery, predict_performance, identify_gaps, recommend_remediation, choose_difficulty
 from core.quizzes import load_quiz_packs, grade_quiz
+
+
 
 st.set_page_config(page_title="EduRAG: Learning Path RAG", layout="wide")
 st.title("🎓 EduRAG — Personalized Learning Path RAG (DSA + Multimodal)")
