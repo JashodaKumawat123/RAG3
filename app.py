@@ -2,7 +2,12 @@ import os, json, time, io, uuid
 import streamlit as st
 import pandas as pd
 from PIL import Image
-import cv2
+try:
+    import cv2
+    OPENCV_AVAILABLE = True
+except ImportError:
+    OPENCV_AVAILABLE = False
+    print("OpenCV not available - video processing will be disabled")
 from core.rag import RAGEngine, format_context
 from core.path import personalize_path
 from core.user import upsert_user, get_user, log_progress, get_progress, log_interaction
@@ -69,7 +74,7 @@ with tabs[0]:
                     st.error(f"Image {f.name} error: {e}")
             added += st.session_state.clip.add_images(items)
         # Videos (extract frames every N seconds)
-        if vids:
+        if vids and OPENCV_AVAILABLE:
             for f in vids:
                 tmp = f"tmp_{uuid.uuid4().hex}_{f.name}"
                 with open(tmp, "wb") as out:
@@ -94,6 +99,8 @@ with tabs[0]:
                 os.remove(tmp)
                 if items:
                     added += st.session_state.clip.add_images(items)
+        elif vids and not OPENCV_AVAILABLE:
+            st.warning("Video processing is disabled in this environment. Only images and audio transcripts will be processed.")
         # Audio (store transcript as text into primary RAG)
         if auds:
             for f in auds:

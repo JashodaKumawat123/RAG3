@@ -5,4 +5,4 @@ numpy
 torch
 transformers
 Pillow
-opencv-python
+# opencv-python  # Optional - only needed for video processing
